@@ -1,4 +1,4 @@
-import type { Component, CSSProperties } from 'vue'
+import type { CSSProperties, Component } from 'vue'
 
 export type ToastTypes =
   | 'normal'
@@ -164,7 +164,7 @@ export interface ToastProps {
 export enum SwipeStateTypes {
   SwipedOut = 'SwipedOut',
   SwipedBack = 'SwipedBack',
-  NotSwiped = 'NotSwiped'
+  NotSwiped = 'NotSwiped',
 }
 
 export type Theme = 'light' | 'dark' | 'system'

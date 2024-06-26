@@ -6,9 +6,9 @@ type CopyCodeParams = {
   checkIconRef: Ref<boolean>
 }
 
-export const useCopyCode = async ({ code, checkIconRef }: CopyCodeParams) => {
+export async function useCopyCode({ code, checkIconRef }: CopyCodeParams) {
   const { copy } = useClipboard({
-    source: code
+    source: code,
   })
 
   checkIconRef.value = false
